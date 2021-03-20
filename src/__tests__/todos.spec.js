@@ -5,6 +5,7 @@ const app = require('../');
 
 describe('Todos', () => {
   it("should be able to list all user's todo", async () => {
+
     const userResponse = await request(app)
       .post('/users')
       .send({
